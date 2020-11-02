@@ -61,3 +61,5 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Style/SymbolArray:
+  Enable: false
