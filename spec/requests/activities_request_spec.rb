@@ -12,11 +12,4 @@ RSpec.describe 'Activities', type: :request do
       total: 12
     }
   end
-
-  # describe 'GET /activities' do
-  #   it 'reponds with invalid request without JWT' do
-  #     get '/activities'
-  #     expect(response).to have_http_status(200)
-  #     expect(response.body).to match("[]")
-  #   end
 end
