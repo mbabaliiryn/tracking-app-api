@@ -21,6 +21,12 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
+
+  # Compress CSS using a preprocessor.
+  # config.assets.css_compressor = :sass
+
+ 
+
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 
@@ -51,7 +57,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "tracking_app_api_production"
+  # config.active_job.queue_name_prefix = "final_capstone_backend_production"
 
   config.action_mailer.perform_caching = false
 

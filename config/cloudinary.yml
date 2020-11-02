@@ -1,0 +1,9 @@
+development:
+  cloud_name: "djhu8b8v8"
+  api_key: "736567322932831"
+  api_secret: "L-7Bc55uPcwMvA8_jgPGMPqH-dY"
+
+production:
+  cloud_name: "djhu8b8v8"
+  api_key: "736567322932831"
+  api_secret: "L-7Bc55uPcwMvA8_jgPGMPqH-dY"
