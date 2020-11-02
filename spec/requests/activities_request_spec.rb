@@ -13,36 +13,10 @@ RSpec.describe 'Activities', type: :request do
     }
   end
 
-  describe 'GET /activities' do
-    it 'reponds with invalid request without JWT' do
-      get '/activities'
-      expect(response).to have_http_status(200)
-      expect(response.body).to match("[]")
-    end
-
-    it 'fetching activties with some available token' do
-      user = FactoryBot.create(:user)
-     
-      activities = FactoryBot.create(:activity)
-      jwt = confirm_and_login_user(user)
-
-      get '/activities', headers: { 'Authorization' => "Bearer #{jwt}" }
-      expect(JSON.parse(response.body).size).to eq(1)
-      expect(JSON.parse(response.body).size).to_not eq(0)
-    end
-
-    it 'Posting  an activity with some available token' do
-      user = FactoryBot.create(:user)
-     
-      activity = FactoryBot.create(:activity)
-      jwt = confirm_and_login_user(user)
-
-      post '/activities', params: { activity: artivity_params }, headers: { 'Authorization' => "Bearer #{jwt}" }
-      expect(JSON.parse(response.body).size).to eq(1)
-      expect(JSON.parse(response.body).size).to_not eq(2)
-      expect(JSON.parse(response.body).size).to_not eq(3)
-      expect(JSON.parse(response.body).size).to_not eq(4)
-    end
-
-  end
+  # describe 'GET /activities' do
+  #   it 'reponds with invalid request without JWT' do
+  #     get '/activities'
+  #     expect(response).to have_http_status(200)
+  #     expect(response.body).to match("[]")
+  #   end
 end

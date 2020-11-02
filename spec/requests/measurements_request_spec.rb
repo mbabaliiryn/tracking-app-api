@@ -15,5 +15,4 @@ RSpec.describe 'Measurements', type: :request do
       activity_id: activity.id
     }
   end
-
 end
