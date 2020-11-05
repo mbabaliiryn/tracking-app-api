@@ -13,7 +13,7 @@ This project development was achieved using the following technologies:
 
 ## Live Demo
 
-- [Live Link](https://activity-tracker-app.netlify.app/)
+- [Live Link](https://activity-tracking-app.netlify.app/)
 
 
 ## ScreenShots
